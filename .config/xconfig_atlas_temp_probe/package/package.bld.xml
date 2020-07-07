@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="xconfig_atlas_temp_probe" version="" producerId="undefined">
+    <units>
+    </units>
+    <sources>
+        <srcFile name="package/cfg/atlas_temp_probe_pem4.c"/>
+    </sources>
+    <configscripts>
+        <srcFile name="C:/Users/mathe/Documents/CCS/ccs9/workspace_v9/atlas_temp_probe/atlas_temp_probe.cfg"/>
+    </configscripts>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/cfg/atlas_temp_probe_pem4.mak" src="package.bld"/>
+        <srcFile name="package/cfg/atlas_temp_probe_pem4.oem4.dep" src="package/cfg/atlas_temp_probe_pem4.c"/>
+        <srcFile name="package/cfg/atlas_temp_probe_pem4.dep" src="package/cfg/atlas_temp_probe_pem4.cfg"/>
+        <srcFile name="package/cfg/atlas_temp_probe.xem4.mak" src="package.bld"/>
+        <srcFile name="package/rel/xconfig_atlas_temp_probe.tar.dep" src="package/rel/xconfig_atlas_temp_probe.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="ti.targets.arm.elf.M4"
+            version="ti.targets.arm.elf.M4{1,0,18.12,4"
+            rawVersion="18.12.4"
+            platform="ti.platforms.tiva:TM4C1294NCPDT:1"
+            isa="v7M4"
+            suffix="em4"
+            rootDir="C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS"
+            os="undefined"
+            rts="ti.targets.arm.rtsarm">
+            <model endian="little"
+                codeModel="thumb2"
+                dataModel="undefined"/>
+        </target>
+    </targets>
+    <libraries>
+    </libraries>
+    <configurations>
+    <configuration name="atlas_temp_probe"
+        pname="atlas_temp_probe.pem4"
+        target="ti.targets.arm.elf.M4"
+        platform="ti.platforms.simplelink:CC3220SF"
+        profile="release"
+        isPartial="false"
+        xCfgScript="package/cfg/atlas_temp_probe_pem4.cfg"
+        xCfgPrefix="package/cfg/atlas_temp_probe_pem4"
+        cfgScript="C:/Users/mathe/Documents/CCS/ccs9/workspace_v9/atlas_temp_probe/atlas_temp_probe.cfg"
+        cfgArgs="null"
+        />
+    </configurations>
+    <executables>
+    <executable name="atlas_temp_probe"
+        pname="atlas_temp_probe.xem4"
+        target="ti.targets.arm.elf.M4"
+        platform="ti.platforms.simplelink:CC3220SF"
+        profile="release"
+        xCfgScript="package/cfg/atlas_temp_probe_pem4.cfg"
+        xCfgPrefix="package/cfg/atlas_temp_probe_pem4"
+        cfgScript="C:/Users/mathe/Documents/CCS/ccs9/workspace_v9/atlas_temp_probe/atlas_temp_probe.cfg"
+        cfgArgs="null"
+        />
+    </executables>
+    <tests>
+    <test exeName="atlas_temp_probe.xem4"
+        args=""
+        groupName="atlas_temp_probe.xem4"
+        refOutput="undefined"
+        refExitCode="0"
+        execArgs=""
+        />
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="xconfig_atlas_temp_probe"
+        pname="xconfig_atlas_temp_probe.tar"
+        label="default"
+    >
+        <file name="package/package.bld.xml"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.xdc.inc"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>
